@@ -19,62 +19,56 @@ class house extends Frame
     }
     public void paint(Graphics g)
     {
-        //house base
-        g.drawRect(550,550,600,300);
+        g.setColor(Color.black);
+        
+        g.drawLine(50,300,375,300);                
+        g.drawLine(80,300,80,150);                 
+        g.drawLine(200,300,200,150); 	       
+        g.drawLine(50,170,140,110); 	       
+        g.drawLine(140,110,230,170);              
+        // to draw entrance(door frame)
+        g.drawLine(110,220,110,300);	      
+        g.drawLine(170,220,170,300); 	      
+        g.drawLine(110,220,170,220); 	      
+        // to draw the man
+        g.drawLine(320,280,300,300); 	      
+        g.drawLine(320,280,340,300); 	      
+        g.drawLine(320,280,320,250); 	      
+        g.drawLine(300,270,320,250); 	      
+        g.drawLine(340,270,320,250); 	    
+        g.drawOval(310,230,20,20);              
 
-        //roof
-        int x[] = {550,850,1150};
-        int y[] = {550,350,550};
-        g.drawPolygon(x,y,3);
 
-        //roof window
-        g.drawOval(800,420,100,100);
 
-        //door
-        g.drawRect(850,700,120,150);
 
-        //door nob
-        g.drawOval(850,770,10,10);
 
-        //window in base
-        g.drawRect(600,620,75,75);
 
-        //window bar
-        g.drawLine(600,665,675,665);
-        g.drawLine(645,620,645,695);
-
-        //chimney
-        int a[] = {1000,1000,1050,1050};
-        int b[] = {450,350,350,484};
-        g.drawPolygon(a,b,4);
 
         //sun in the sky
-        g.setColor(Color.YELLOW);
-        g.drawOval(50,50,100,100);
-        g.setColor(Color.YELLOW);
-        g.fillOval(50,50,100,100);
-        g.drawLine(50,50,20,20);
-        g.setColor(Color.YELLOW);
-        g.drawLine(150,150,180,180);
-        g.drawLine(150,50,180,20);
-        g.drawLine(50,150,20,180);
-        g.drawLine(30,100,-10,100);
-        g.drawLine(100,30,100,-10);
-        g.drawLine(170,100,210,100);
-        g.drawLine(100,170,100,210);
+        g.setColor (Color.orange);
+        g.fillArc (100,20,80,80,0,360);
+        g.drawLine (95,55,75,55);
+        g.drawLine (140,105,140,125);
+        g.drawLine (140,15,140,0);
+        g.drawLine (185,60,205,60);
+        g.drawLine (105,35,85,25);
+        g.drawLine (120,20,105,5);
+        g.drawLine (100,80,80,90);
+        g.drawLine (115,100,100,120);
+        g.drawLine (175,5,160,20);
+        g.drawLine (205,25,175,35);
+        g.drawLine (205,90,175,80);
+        g.drawLine (175,120,160,100);
 
-        //stickman next to house
-        g.setColor(Color.BLACK);
-        g.drawLine(1500,750,1500,600);
-        g.drawLine(1430,675,1570,675);
-        g.drawLine(1450,820,1500,750);
-        g.drawLine(1550,820,1500,750);
-        g.drawOval(1450,500,100,100);
+
+
 
         //garden
         g.setColor(Color.green);
-        g.fillRect(0,850,3000,1550);
-        g.drawRect(0,850,1150,1550);
+        g.fillRect(0,300,3000,2550);
+        g.drawRect(0,300,2150,1550); g.setColor(Color.green);
+        g.fillRect(0,300,3000,2550);
+        g.drawRect(0,300,2150,1550);
 
 
 
