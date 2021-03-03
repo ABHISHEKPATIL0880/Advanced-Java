@@ -1,5 +1,6 @@
 package abhishek.learn;
 
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -8,7 +9,7 @@ class text extends Frame{
         addWindowListener(new WindowAdapter(){
             public void windowClosing(WindowEvent e){
                 dispose();
-                System.out.println("nikal");
+                System.out.println("OK!!!!!");
             }
         });
     }
@@ -18,16 +19,13 @@ class text extends Frame{
         t.setVisible(true);
         t.setTitle("text");
         t.setLayout(null);
-        TextField t1 = new TextField("eye1");
+        TextField t1 = new TextField("Enter text 1");
         t1.setBounds(20,40,60,30);
         t.add(t1);
-        TextField t2,t3;
-        t2= new TextField("eye2");
+        TextField t2;
+        t2= new TextField("Enter text 2");
         t2.setBounds(220,40,60,30);
-        t3= new TextField("smile");
-        t3.setBounds(110,200,90,30);
         t.add(t2);
-        t.add(t3);
 
     }
 }
