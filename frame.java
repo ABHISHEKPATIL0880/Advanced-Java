@@ -16,7 +16,7 @@ class frame extends Frame {
 
     public static void main(String arg[]) {
         frame f = new frame();
-        f.setSize(300, 300);
+        f.setSize(350, 350);
         f.setVisible(true);
         f.setTitle("frame-1");
 
