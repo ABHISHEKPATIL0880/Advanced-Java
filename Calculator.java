@@ -129,15 +129,13 @@ class calculator extends JFrame implements ActionListener {
                 s2 = s2 + s;
             else
                 s0 = s0 + s;
-  
-            // set the value of text
+
             l.setText(s0 + s1 + s2);
         }
         else if (s.charAt(0) == 'C') {
-            // clear the one letter
+           
             s0 = s1 = s2 = "";
   
-            // set the value of text
             l.setText(s0 + s1 + s2);
         }
         else if (s.charAt(0) == '=') {
